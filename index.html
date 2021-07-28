@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="bg-dark mb-3">
+  </header>
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="tasks">
+          <h1>LISTA DE TAREAS</h1>
+          <br>
+          <input class="form-control" type="search" 
+          style= "width: 40rem; height: 3 rem"
+          placeholder="Buscar tarea" aria-label="Search" id="searchtextbox" />
+          <div class="todo-inner">
+            <div class="form-row">
+              <div class="options">
+                <input type="text" class="form-control" placeholder="Añadir tarea" id="addtaskinput" />
+                <input type="hidden" id="saveindex">
+              </div>
+              <button type="button" class="btn-success" id="addtaskbtn">
+                Añadir Tarea
+              </button>
+              <button type="button" class="btn-success" id="savetaskbtn" style="display: none;">
+                Guardar Tarea
+              </button>
+              <button type="button" id="deleteallbtn" class="btn-trash">
+                Eliminar todas
+              </button>
+            </div>
+            <div class="to-do-output">
+              <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

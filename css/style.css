@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+    font-family: 'Roboto-Regular';
+    background: beige;
+}
+header .form-control{
+    padding: 1rem;
+    color: orangered; 
+}
+section.todo-outer {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+section.todo-outer h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.todo-inner {
+    width: 100%;
+    float: left;
+    padding: 40px;
+    box-shadow: 0px 0px 10px #c1c1c1;
+    background: rgb(246, 247, 247);
+}
+table tr td button {
+    background: no-repeat;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.completed{text-decoration: line-through;}
